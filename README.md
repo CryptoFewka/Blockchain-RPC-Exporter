@@ -48,12 +48,12 @@ python exporter.py
 2. Export paths of generated configuration files relative to `docker-compose.yml`:
 ```bash
 export VALIDATION_FILE_PATH="src/validation.yml" # For example if we saved validation config file in src/validation.yml
-export CONFIG_FILE_PATH="src/config.yml"  # For example if we saved config file in src/config.yml
+export CONFIGURATION_FILE_PATH="src/config.yml"  # For example if we saved config file in src/config.yml
 ```
 3. Execute
 ```bash
 docker-compose build
-docker-compose-up
+docker-compose up
 curl localhost:8000/metrics # Exporter
 curl localhost:3000         # Grafana
 curl localhost:9090         # Prometheus
